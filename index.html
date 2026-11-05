@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mame Fama Fall — Full-stack developer</title>
+<meta name="description" content="Portfolio of Mame Fama Fall, software engineering student in Dakar. React, Node, Spring Boot, Python, PostgreSQL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f4f1;--ink:#16202b;--mute:#5a6670;--line:#cfd6d0;--acc:#0b6b5c;--acc-bg:#dcebe6}
+@media (prefers-color-scheme:dark){:root{--bg:#10171c;--ink:#e8ede9;--mute:#98a5ac;--line:#2a363e;--acc:#5fd0b8;--acc-bg:#16302b}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:var(--acc)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.5rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+header.top a.logo{font-weight:600;text-decoration:none;color:var(--ink)}
+.lang button{font:inherit;font-size:.9rem;background:none;border:1px solid var(--line);color:var(--ink);padding:.25rem .7rem;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+h1{font:700 clamp(2.8rem,9vw,5.6rem)/1 Fraunces,Georgia,serif;letter-spacing:-.03em;margin:4rem 0 1.5rem}
+.lead{font-size:1.3rem;max-width:34rem;margin:0 0 1.5rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:4rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600}
+.btn.p{background:var(--ink);color:var(--bg)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font:700 1.8rem/1.2 Fraunces,Georgia,serif;margin:0 0 1.5rem}
+.repo{display:grid;grid-template-columns:11rem 1fr;gap:.5rem 1.5rem;padding:1.25rem 0;border-bottom:1px solid var(--line)}
+.repo:first-of-type{padding-top:0}
+.repo h3{margin:0;font:600 1.05rem/1.4 "Instrument Sans",sans-serif}
+.repo h3 a{text-decoration:none}
+.repo h3 a:hover{text-decoration:underline}
+.repo p{margin:0 0 .5rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
+.tags li{background:var(--acc-bg);color:var(--ink);font-size:.82rem;padding:.1rem .55rem}
+.meta{color:var(--mute);font-size:.9rem}
+.skills{display:grid;grid-template-columns:11rem 1fr;gap:.6rem 1.5rem;margin:0}
+.skills dt{font-weight:600}
+.skills dd{margin:0}
+footer{padding:2rem 0 4rem;color:var(--mute);font-size:.9rem}
+@media (max-width:640px){.repo,.skills{grid-template-columns:1fr}.skills dt{margin-top:.6rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="logo" href="#top">Mame Fama Fall</a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-l="en" aria-pressed="true">EN</button>
+    <button type="button" data-l="fr" aria-pressed="false">FR</button>
+  </div>
+</header>
+
+<main id="top">
+  <h1>Mame Fama Fall</h1>
+  <p class="lead" data-en="I build full-stack web applications, from the database to the interface. Final-year software engineering student in Dakar, looking for an end-of-studies internship."
+     data-fr="Je conçois des applications web full-stack, de la base de données à l'interface. Étudiante en dernière année de génie logiciel à Dakar, je cherche un stage de fin d'études.">I build full-stack web applications, from the database to the interface. Final-year software engineering student in Dakar, looking for an end-of-studies internship.</p>
+  <div class="cta">
+    <a class="btn p" href="#projects" data-en="See my projects" data-fr="Voir mes projets">See my projects</a>
+    <a class="btn" href="mailto:mamefamafall@esp.sn" data-en="Email me" data-fr="M'écrire">Email me</a>
+    <a class="btn" href="https://github.com/mamefama-rgb">GitHub</a>
+  </div>
+
+  <section id="projects">
+    <h2 data-en="Projects" data-fr="Projets">Projects</h2>
+
+    <article class="repo">
+      <h3><a href="https://maisonawa.alwaysdata.net/">Élite Store (MaisonAWA)</a></h3>
+      <div>
+        <p data-en="Complete e-commerce site for bags, perfumes, clothes and shoes: React front end, Node.js / Express API with JWT authentication, PostgreSQL, Docker." data-fr="Site e-commerce complet (sacs, parfums, vêtements, chaussures) : front end React, API Node.js / Express avec authentification JWT, PostgreSQL, Docker.">Complete e-commerce site for bags, perfumes, clothes and shoes: React front end, Node.js / Express API with JWT authentication, PostgreSQL, Docker.</p>
+        <ul class="tags"><li>React</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>JWT</li><li>Docker</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3><a href="https://fawzulmuridiina.alwaysdata.net/">Dahira Fawzul Mouridiina</a></h3>
+      <div>
+        <p data-en="Community platform for the Dahira Fawzul Mouridiina organisation, deployed and live: public site plus a full admin panel to manage events, commissions, gallery, members and contact messages." data-fr="Plateforme communautaire de l'organisation Dahira Fawzul Mouridiina, en ligne : site public et panneau d'administration complet pour gérer événements, commissions, galerie, membres et messages de contact.">Community platform for the Dahira Fawzul Mouridiina organisation, deployed and live: public site plus a full admin panel to manage events, commissions, gallery, members and contact messages.</p>
+        <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Admin panel</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3><a href="https://github.com/mamefama-rgb/BoutiqueDiayma-FAMA">Boutique Diayma</a></h3>
+      <div>
+        <p data-en="Online shop built with ASP.NET Core MVC (C#) for the .NET course at ESP/UCAD, with a focus on debugging in Visual Studio." data-fr="Boutique en ligne en ASP.NET Core MVC (C#), réalisée pour le cours .NET à l'ESP/UCAD, avec un accent sur le débogage dans Visual Studio.">Online shop built with ASP.NET Core MVC (C#) for the .NET course at ESP/UCAD, with a focus on debugging in Visual Studio.</p>
+        <ul class="tags"><li>C#</li><li>ASP.NET Core</li><li>MVC</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3><a href="https://github.com/mamefama-rgb/RTS">TelecomDim Pro</a></h3>
+      <div>
+        <p data-en="Web tool that sizes GSM networks: offered traffic in Erlang, cell capacity and more. Telecom networks and services course project." data-fr="Outil web de dimensionnement de réseaux GSM : trafic offert en Erlang, capacité d'une cellule, etc. Projet du cours Réseaux télécoms et services.">Web tool that sizes GSM networks: offered traffic in Erlang, cell capacity and more. Telecom networks and services course project.</p>
+        <ul class="tags"><li>Python</li><li>Telecom</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3><a href="https://github.com/mamefama-rgb/Election_BD">ParrainageApp</a></h3>
+      <div>
+        <p data-en="Sponsorship management app for elections, built with Angular." data-fr="Application de gestion des parrainages pour des élections, développée avec Angular.">Sponsorship management app for elections, built with Angular.</p>
+        <ul class="tags"><li>Angular</li><li>PHP</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3><a href="https://github.com/mamefama-rgb/app-actu">app-actu</a></h3>
+      <div>
+        <p data-en="News application with a PHP back end, a MySQL schema and a JavaScript front end." data-fr="Application d'actualités avec back end PHP, base MySQL et front end JavaScript.">News application with a PHP back end, a MySQL schema and a JavaScript front end.</p>
+        <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3><a href="https://github.com/mamefama-rgb/XML-miniprojet">XML mini-project</a></h3>
+      <div>
+        <p data-en="Java mini-project on XML data processing." data-fr="Mini-projet Java sur le traitement de données XML.">Java mini-project on XML data processing.</p>
+        <ul class="tags"><li>Java</li><li>XML</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3><a href="https://github.com/mamefama-rgb/Services_reseau">Network services</a></h3>
+      <div>
+        <p data-en="Network services coursework in PHP." data-fr="Travaux de cours sur les services réseau en PHP.">Network services coursework in PHP.</p>
+        <ul class="tags"><li>PHP</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3><a href="https://github.com/mamefama-rgb/demo-owasp-zap">OWASP ZAP demo</a></h3>
+      <div>
+        <p data-en="Web security scanning demo with OWASP ZAP." data-fr="Démonstration d'analyse de sécurité web avec OWASP ZAP.">Web security scanning demo with OWASP ZAP.</p>
+        <ul class="tags"><li>Security</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3>Malware classifier</h3>
+      <div>
+        <p data-en="Machine-learning classifier for Windows executables (SVM, Random Forest, KNN) with a Streamlit interface." data-fr="Classificateur de logiciels malveillants (exécutables Windows) avec SVM, Random Forest et KNN, et une interface Streamlit.">Machine-learning classifier for Windows executables (SVM, Random Forest, KNN) with a Streamlit interface.</p>
+        <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Streamlit</li></ul>
+      </div>
+    </article>
+
+    <article class="repo">
+      <h3>TV streaming app</h3>
+      <div>
+        <p data-en="Final-year project: live and replay streaming platform for a television channel." data-fr="Projet de fin d'études : plateforme de streaming en direct et en replay pour une chaîne de télévision.">Final-year project: live and replay streaming platform for a television channel.</p>
+        <ul class="tags"><li>Streaming</li><li>Web</li></ul>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2 data-en="Skills" data-fr="Compétences">Skills</h2>
+    <dl class="skills">
+      <dt data-en="Front end" data-fr="Front end">Front end</dt><dd>HTML, CSS, JavaScript, React</dd>
+      <dt data-en="Back end" data-fr="Back end">Back end</dt><dd>Node.js / Express, Spring Boot, Java, PHP / Laravel, Python</dd>
+      <dt data-en="Databases" data-fr="Bases de données">Databases</dt><dd>PostgreSQL, MySQL, Oracle, MongoDB</dd>
+      <dt data-en="Tools" data-fr="Outils">Tools</dt><dd>Git / GitHub, Docker, Linux</dd>
+      <dt data-en="Security" data-fr="Sécurité">Security</dt><dd data-en="Cisco Networking Academy cybersecurity certification (in progress)" data-fr="Certification cybersécurité Cisco Networking Academy (en cours)">Cisco Networking Academy cybersecurity certification (in progress)</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2 data-en="Experience and education" data-fr="Parcours">Experience and education</h2>
+    <dl class="skills">
+      <dt>TGI</dt><dd data-en="Internship" data-fr="Stage">Internship</dd>
+      <dt>Defar SCI</dt><dd data-en="Internship" data-fr="Stage">Internship</dd>
+      <dt data-en="Education" data-fr="Formation">Education</dt><dd data-en="Software engineering and information systems (GLSI), École Supérieure Polytechnique de Dakar (ESP/UCAD), 5th year" data-fr="Génie logiciel et systèmes d'information (GLSI), École Supérieure Polytechnique de Dakar (ESP/UCAD), 5e année">Software engineering and information systems (GLSI), École Supérieure Polytechnique de Dakar (ESP/UCAD), 5th year</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2 data-en="Contact" data-fr="Contact">Contact</h2>
+    <p><a href="mailto:mamefamafall@esp.sn">mamefamafall@esp.sn</a> · <a href="https://github.com/mamefama-rgb">github.com/mamefama-rgb</a></p>
+  </section>
+</main>
+<footer>© 2026 Mame Fama Fall · Dakar, Sénégal</footer>
+</div>
+
+<script>
+document.querySelectorAll('.lang button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var l=b.dataset.l;
+    document.documentElement.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    document.querySelectorAll('[data-'+l+']').forEach(function(e){e.textContent=e.getAttribute('data-'+l)});
+  });
+});
+</script>
+</body>
+</html>
